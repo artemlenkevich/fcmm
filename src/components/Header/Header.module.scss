@@ -1,0 +1,141 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #feebef;
+    padding: 5px 20px
+}
+
+.header__section_left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.burger {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    &::after {
+        content: '';
+        margin-top: 5px;
+        display: block;
+        border-top: 2px solid black;
+    }
+}
+
+.logo {
+    margin-left: 15px;
+    flex-shrink: 0;
+    height: 50px;
+    width: 36px;
+}
+
+.donate {
+    margin-left: 15px;
+    flex-shrink: 0;
+    &__icon {
+        margin-right: 4px;
+        width: 15px;
+        height: 15px;
+    }
+    &__text {
+        color: #e65c78;
+        vertical-align: top;
+        font: {
+            size: 13px;
+            weight: 600;
+        }
+    }
+}
+
+.header__section_center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 640px;
+}
+
+.search {
+    width: 378px;
+    height: 42px;
+    padding: 10px 20px;
+    border-radius: 9px;
+    background-color: #ffdee5;
+    border: 1px solid transparent;
+    font-size: 16px;
+    transition: all 0.1s linear;
+    &:hover, &:focus {
+        background-color: white;
+        border: 1px solid #ffbbc9;
+        box-shadow: 0 0 0 3px rgb(229 92 120 / 12%);
+    } 
+}
+
+.create_btn {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    height: 42px;
+    background-color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 6%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+    transition: box-shadow 0.1s linear;
+    font: {
+        size: 15px;
+        weight: 600;
+    }
+    &:hover {
+        box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 6%), 0 2px 4px 0 rgb(0 0 0 / 8%);
+    }
+    &__icon {
+        margin-right: 6px;
+        width: 19px;
+        height: 19px;
+    }
+}
+
+.header__section_right {
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 150px;
+}
+
+.bell {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    &:hover {
+        fill: #e55c78;
+    }
+}
+
+.login {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        color: #e55c78;
+    }
+    &__icon {
+        margin-right: 10px;
+        width: 28px;
+        height: 28px;
+        fill: currentColor;
+    }
+    &__text {
+        font: {
+            size: 15px;
+            weight: 600;
+        }
+    }
+}
