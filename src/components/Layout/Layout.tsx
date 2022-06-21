@@ -14,6 +14,7 @@ export const Layout = () => {
                 <main className={styles.mainContent}>
                     <Outlet />
                 </main>
+                <div className={styles.rightColumn}></div>
             </div>
         </>
     )
