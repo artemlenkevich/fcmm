@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import styles from './App.module.scss';
 import { Layout } from './components/Layout';
+import { Modals } from './components/Modals';
 import { NewPage } from './pages/New';
 import { PopularPage } from './pages/PopularPage';
 
@@ -14,6 +15,7 @@ function App() {
           <Route path='/new' element={<NewPage />} />
         </Route>
       </Routes>
+      <Modals />
     </div>
   )
 }
