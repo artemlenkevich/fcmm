@@ -1,3 +1,9 @@
+import { Post } from "../../components/Post"
+
 export const PopularPage = () => {
-    return <div>Popular Page</div>
+    return (
+        <div>
+            <Post/>
+        </div>
+    )
 }
