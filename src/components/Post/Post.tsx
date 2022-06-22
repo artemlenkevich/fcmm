@@ -20,10 +20,9 @@ export const Post: React.FC = () => {
                     </button>
                 </div>
             </div>
-            <div className={styles.content}>
-                <h2 className={styles.title}>Без брендов: когда уйдут все обещавшие уйти модные магазины и что мы тогда будем носить</h2>
-                <img className={styles.contentImage} src="" alt="" />
-            </div>
+            <h2 className={styles.title}>Без брендов: когда уйдут все обещавшие уйти модные магазины и что мы тогда будем носить</h2>
+            <p className={styles.previewText}>С началом «спецоперации» иностранные компании массово покидают Россию, а fashion-ритейл понес, возможно, самые большие потери.</p>
+            <img className={styles.contentImage} src="https://leonardo.osnova.io/386456ac-1536-5e02-ba20-f89d7476382f/-/preview/700/-/format/webp/" alt="" />
             <div className={styles.footer}>
                 <div className={styles.commentsCounter}>150</div>
                 <div className={styles.addToBookmarks}></div>
